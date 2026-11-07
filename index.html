@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres SK - Reporte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            /* Fondo rosa pálido con puntitos idéntico al de la imagen */
+            background-color: #fde5ed; 
+            background-image: radial-gradient(#f9c5d5 2px, transparent 2px);
+            background-size: 25px 25px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            margin: 0;
+        }
+        
+        .img-container {
+            max-width: 1000px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(189, 10, 54, 0.2); /* Sombra guinda/rosa suave */
+            border: 5px solid white; /* Marco blanco tipo foto */
+            background-color: white;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px; /* Curva interior para que encaje bien */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor con un ligero efecto de acercamiento al pasar el mouse -->
+    <div class="img-container transition-transform hover:scale-[1.01] duration-300">
+        <!-- Imagen actualizada con el nombre exacto del archivo -->
+        <img src="WhatsApp Image 2026-11-05 at 6.20.12 PM.jpeg" alt="Postres SK - Tabla de Ingresos y Costos">
+    </div>
+
+</body>
+</html>
